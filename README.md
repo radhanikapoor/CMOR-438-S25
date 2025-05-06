@@ -10,7 +10,7 @@ Each notebook includes well-documented code, visualizations, and clear markdown 
 
 The project is organized by learning type (supervised vs. unsupervised), and further divided by algorithm families such as regression, classification, clustering, and dimensionality reduction.
 
-### 📚 Supervised Learning
+### Supervised Learning
 Supervised learning involves training models on labeled data where the outcome variable (target) is known. The following algorithms are implemented:
 
 - **Linear Regression**: Fit a line to data for continuous prediction tasks.
@@ -21,7 +21,7 @@ Supervised learning involves training models on labeled data where the outcome v
 - **Random Forests**: Ensemble method combining multiple decision trees for improved performance.
 - **Ensemble Methods**: Techniques like bagging and boosting to enhance model stability and accuracy.
 
-### 🔍 Unsupervised Learning
+### Unsupervised Learning
 Unsupervised learning is applied to unlabeled data to identify patterns or structure:
 
 - **K-Means Clustering**: Partition data into clusters based on feature similarity.
@@ -47,8 +47,8 @@ This repository was created in the context of exploring core machine learning pr
 
 ## Attribution
 
-- 🧠 Some explanations and formatting were supported by **ChatGPT**, which was used as a writing and organization aid.
-- 📚 The original course content and structure inspiration came from [Dr. Randy R. Davila's public GitHub repository](https://github.com/RandyRDavila/Data_Science_and_Machine_Learning_Spring_2022).
+-  Some explanations and formatting were supported by **ChatGPT**, which was used as a writing and organization aid.
+- The original course content and structure inspiration came from [Dr. Randy R. Davila's public GitHub repository](https://github.com/RandyRDavila/Data_Science_and_Machine_Learning_Spring_2022).
 
 ---
 
@@ -64,8 +64,24 @@ All notebooks are self-contained and designed to be reproducible. Each script in
 
 ## How to Use
 
-### 📥 Clone the Repo
+### Clone the Repo
 
 ```bash
 git clone https://github.com/t0dd26/CMOR438-Spring-2025.git
 cd CMOR438-Spring-2025
+```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Launch Jupyter
+
+```bash
+jupyter lab
+```
+
+Then open any notebook under `notebooks/`.
+
