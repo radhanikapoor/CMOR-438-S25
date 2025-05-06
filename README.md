@@ -4,7 +4,7 @@ Creator: Radhani Kapoor
 
 ## Overview
 
-![Machine Learning Image](machine_learning.jpeg)
+<img src="machine_learning.jpeg" alt="Machine Learning Image" width="600"/>
 
 This repository is a  collection of supervised and unsupervised machine learning algorithm implementations. The goal is to explore the theory and application of fundamental ML algorithms using Python, and to understand how each method interprets and operates on real-world datasets.
 
