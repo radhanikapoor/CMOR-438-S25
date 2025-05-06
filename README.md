@@ -1,6 +1,7 @@
 # Machine Learning Algorithms and Applications
 
 Creator: Radhani Kapoor
+
 ## Overview
 
 ![Machine Learning Image]("machine_learning.jpeg")
