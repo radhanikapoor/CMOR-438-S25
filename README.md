@@ -69,7 +69,6 @@ All notebooks are self-contained and designed to be reproducible. Each script in
 - Training and evaluation procedures
 - Visualization of results
 
-## How to Use
 
 ### Clone the Repo
 
@@ -77,18 +76,4 @@ All notebooks are self-contained and designed to be reproducible. Each script in
 git clone https://github.com/t0dd26/CMOR438-Spring-2025.git
 cd CMOR438-Spring-2025
 ```
-
-### Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### Launch Jupyter
-
-```bash
-jupyter lab
-```
-
-Then open any notebook under `notebooks/`.
 
