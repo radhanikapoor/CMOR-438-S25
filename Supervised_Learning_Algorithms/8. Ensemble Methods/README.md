@@ -14,8 +14,9 @@ Both are applied to predict individual medical insurance charges using demograph
 
 Bagging reduces variance by training multiple models on **bootstrapped samples** (random samples with replacement) and averaging their predictions:
 
-
-$\hat{f}_{\mathrm{bag}}(x) = \frac{1}{M} \sum_{m=1}^{M} h_m(x)$
+$$
+\hat{f}_{\mathrm{bag}}(x) = \frac{1}{M} \sum_{m=1}^{M} h_m(x)
+$$
 
 
 - Each base model $h_m$ is typically a decision tree
