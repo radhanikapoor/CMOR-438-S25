@@ -52,7 +52,7 @@ click [here](https://www.geeksforgeeks.org/unsupervised-learning/) for more info
 - **Libraries**: `numpy`, `pandas`, `matplotlib`, `scikit-learn`, `seaborn`
 - **Environment**: Jupyter Notebooks for interactive coding and visualization
 
-This repo uses a combination of algorithms from [scikit-learn](https://scikit-learn.org/stable/) and self build.
+This repo uses a combination of algorithms from [scikit-learn](https://scikit-learn.org/stable/) and self built algorithms from class discussions and notes
 
 ---
 
