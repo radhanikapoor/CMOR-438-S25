@@ -78,5 +78,4 @@ git clone https://github.com/t0dd26/CMOR438-Spring-2025.git
 cd CMOR438-Spring-2025
 ```
 
-All other steps for repoducability are included within readme files for specific algorithms
-
+All other steps for repoducability are included within readme files for unsupervised and supervised algorithms
