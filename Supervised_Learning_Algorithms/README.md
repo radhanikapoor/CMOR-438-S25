@@ -1,8 +1,8 @@
 # Supervised Learning Module
 
-<img src="unsupervised_learning.png" alt="Supervised Learning Image" width="1500"/>
-
 ## What is Supervised Learning?
+
+<img src="supervised_learning.png" alt="Supervised Learning Image" width="1500"/>
 
 Supervised learning is a type of machine learning where the algorithm is trained on labeled data—that is, input-output pairs where the correct output (label) is known. The goal is to learn a function that maps inputs to outputs, enabling accurate prediction on new, unseen data.
 
