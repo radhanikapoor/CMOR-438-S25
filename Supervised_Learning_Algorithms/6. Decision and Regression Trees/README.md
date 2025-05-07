@@ -1,8 +1,8 @@
 # Decision and Regression Trees on Insurance Data
 
-This project demonstrates how to implement and analyze **Decision Tree** algorithms for both **classification** and **regression** tasks on the medical insurance dataset.
+This demonstrates how to implement and analyze **Decision Tree** algorithms for both **classification** and **regression** tasks on the medical insurance dataset.
 
-We explore:
+I explore:
 - Classification of `smoker` status based on health and demographic features
 - Regression of `charges` (medical expenses) using the same inputs
 
@@ -12,15 +12,15 @@ We explore:
 
 Decision trees split the input space into axis-aligned regions and make predictions based on the average or most common label within each region.
 
-For any new input \( x \), the prediction is:
+For any new input $x$, the prediction is:
 
 $$
 \hat{f}(x) = \sum_{m=1}^M c_m\,\mathbf{1}(x \in R_m)
 $$
 
 Where:
-- $ R_m $: Region (leaf node)
-- $ c_m $: Constant prediction in that region
+- $R_m$: Region (leaf node)
+- $c_m$: Constant prediction in that region
 
 ---
 
@@ -33,9 +33,7 @@ Predict whether a person is a smoker (`0` or `1`) based on their attributes.
 ### Key Concepts
 
 - **Gini Impurity**:
-  $$
-  G = \sum_{k=1}^{K} p_k(1 - p_k)
-  $$
+  $G = \sum_{k=1}^{K} p_k(1 - p_k)$
   Measures impurity; lower is better.
   
 - **Information Gain**: Reduction in impurity after a split.
@@ -44,12 +42,10 @@ Predict whether a person is a smoker (`0` or `1`) based on their attributes.
 
 - **Accuracy**
 - **Confusion Matrix**:
-  $$
-  \begin{pmatrix}
+  $\begin{pmatrix}
   \text{TN} & \text{FP} \\
   \text{FN} & \text{TP}
-  \end{pmatrix}
-  $$
+  \end{pmatrix}$
 - **ROC Curve** and **AUC**: Assess model performance across thresholds
 
 ---
@@ -70,9 +66,8 @@ Predict continuous `charges` (medical costs) for individuals.
 - **Mean Absolute Error (MAE)**
 - **Root Mean Squared Error (RMSE)**
 - **R² Score**:
-  $$
-  R^2 = 1 - \frac{\sum_i (y_i - \hat{y}_i)^2}{\sum_i (y_i - \bar{y})^2}
-  $$
+  $R^2 = 1 - \frac{\sum_i (y_i - \hat{y}_i)^2}{\sum_i (y_i - \bar{y})^2}$
+  
 
 ---
 
