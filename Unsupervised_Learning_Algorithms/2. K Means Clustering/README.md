@@ -25,7 +25,8 @@ K-Means aims to partition data into $k$ clusters by minimizing within-cluster va
 ### Objective Function
 
 
-$\text{arg min}_S \sum_{i=1}^k \sum_{x \in S_i} \|x - \mu_i\|^2$
+$\arg\min_S \sum_{i=1}^k \sum_{x \in S_i} \|x - \mu_i\|^2$
+
 
 
 Where:
