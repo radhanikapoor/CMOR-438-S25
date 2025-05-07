@@ -29,7 +29,7 @@ $$
 A_k = U_k \Sigma_k V_k^T
 $$
 
-This produces a **rank-$k$** approximation that captures the most significant structure in the image, discarding finer details and noise.
+This produces a **rank-k** approximation that captures the most significant structure in the image, discarding finer details and noise.
 
 ---
 
