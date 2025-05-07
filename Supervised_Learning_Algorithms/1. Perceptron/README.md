@@ -41,9 +41,9 @@ b \leftarrow b + \eta (y - \hat{y})
 $$
 
 Where:
-- $ \eta $ is the **learning rate**
-- $ y $ is the true label
-- $ \hat{y} $ is the predicted label
+- $\eta$ is the **learning rate**
+- $y$ is the true label
+- $\hat{y}$ is the predicted label
 
 ---
 
