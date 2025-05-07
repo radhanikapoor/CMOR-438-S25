@@ -1,6 +1,6 @@
 # Singular Value Decomposition (SVD) for Image Compression
 
-This notebook explores **Singular Value Decomposition (SVD)** as a method for **compressing grayscale face images**. Using the **Olivetti Faces dataset**, we demonstrate how SVD can reduce image size while preserving the most important visual features.
+This notebook explores **Singular Value Decomposition (SVD)** as a method for **compressing grayscale face images**. Using the **Olivetti Faces dataset**, we demonstrate how SVD can reduce image size while preserving the most important visual features. I both create my own implementation and use the sklean one as a comparison measure.
 
 SVD is a core tool in linear algebra and unsupervised learning, commonly used in:
 - Dimensionality reduction
@@ -12,24 +12,24 @@ SVD is a core tool in linear algebra and unsupervised learning, commonly used in
 
 ## What is SVD?
 
-Given a matrix $ A $, SVD decomposes it into three components:
+Given a matrix $A$, SVD decomposes it into three components:
 
 $$
 A = U \Sigma V^T
 $$
 
 Where:
-- $ U $: left singular vectors (orthogonal)
-- $ \Sigma $: diagonal matrix of singular values
-- $ V^T $: right singular vectors (orthogonal)
+- $U$: left singular vectors (orthogonal)
+- $\Sigma$: diagonal matrix of singular values
+- $V^T$: right singular vectors (orthogonal)
 
-To compress the matrix, we keep only the top $ k $ singular values and vectors:
+To compress the matrix, we keep only the top $k$ singular values and vectors:
 
 $$
 A_k = U_k \Sigma_k V_k^T
 $$
 
-This produces a **rank-$ k $** approximation that captures the most significant structure in the image, discarding finer details and noise.
+This produces a **rank-$k$** approximation that captures the most significant structure in the image, discarding finer details and noise.
 
 ---
 
@@ -63,7 +63,7 @@ Unlike typical CSV or image files in the `datasets/` directory, this dataset is 
 ## Compression Demonstration
 
 For each image:
-- We apply SVD and reconstruct it using the top $ k $ singular values (e.g., $ k = 10, 20, 40 $)
+- We apply SVD and reconstruct it using the top $k$ singular values (e.g., $k = 10, 20, 40$)
 - We visualize the tradeoff between **image quality** and **compression ratio**
 - We compute compression metrics like storage size and MSE vs. original image
 
