@@ -81,6 +81,8 @@ This dataset contains information about individuals’ medical charges billed by
 > **Note**: All datasets are stored in the `Datasets/` folder at the root of the project. When loading data from a notebook, use relative paths like `../Datasets/insurance.csv` depending on your folder structure.
 
 
+The `insurance.csv` dataset was used consistently across all algorithms in this project. By applying each model to the same data, the goal was to draw meaningful conclusions about how different machine learning techniques perform under identical conditions. This setup allows for direct comparison of model behavior, strengths, and limitations on a real-world regression task involving both numerical and categorical features.
+
 ---
 
 ## Reproducibility

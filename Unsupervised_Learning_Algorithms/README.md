@@ -74,6 +74,8 @@ This dataset includes personal and demographic information about car insurance c
 
 ---
 
+The car insurance data set was used across as many algorithms as possible to help draw conclusions on how algorithms perform with a specific type of data set and understand what it works best on. I have also included practical implications for the indistry at the bottom of the unupervised learning algorithms
+
 ## Reproducibility
 
 ### Clone the Repository
