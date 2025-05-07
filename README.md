@@ -4,7 +4,7 @@ Creator: Radhani Kapoor
 
 ## Overview
 
-<img src="machine_learning.jpeg" alt="Machine Learning Image" width="600"/>
+<img src="machine_learning.jpeg" alt="Machine Learning Image" width="1500"/>
 
 This repository is a  collection of supervised and unsupervised machine learning algorithm implementations. The goal is to explore the theory and application of fundamental ML algorithms using Python, and to understand how each method interprets and operates on real-world datasets.
 
@@ -28,6 +28,8 @@ The following algorithms are implemented:
 - **Random Forests**: Ensemble method combining multiple decision trees for improved performance.
 - **Ensemble Methods**: Techniques like bagging and boosting to enhance model stability and accuracy.
 
+Click [here](https://www.geeksforgeeks.org/supervised-machine-learning/) for more information on Supervised Learning
+
 ### Unsupervised Learning
 Unsupervised learning is a type of machine learning where the model is given input data without labeled responses. The goal is to uncover hidden patterns, structures, or groupings in the data without prior knowledge of the outcomes.
 
@@ -38,6 +40,8 @@ The following algorithms are implemented:
 - **Principal Component Analysis (PCA)**: Reduce dimensionality while preserving variance.
 - **Singular Value Decomposition (SVD)**: Used for dimensionality reduction and image compression.
 
+click [here](https://www.geeksforgeeks.org/unsupervised-learning/) for more information on Unsupervised Learning
+
 ---
 
 ## Tools and Technologies
@@ -46,7 +50,7 @@ The following algorithms are implemented:
 - **Libraries**: `numpy`, `pandas`, `matplotlib`, `scikit-learn`, `seaborn`
 - **Environment**: Jupyter Notebooks for interactive coding and visualization
 
-This repo uses a combination of algorithms from sklearn and self build.
+This repo uses a combination of algorithms from [scikit-learn](https://scikit-learn.org/stable/) and self build.
 
 ---
 
