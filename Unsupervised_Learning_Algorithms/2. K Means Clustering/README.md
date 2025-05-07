@@ -12,7 +12,7 @@ We follow a standard clustering pipeline:
 
 1. **Preprocess** data (encode categoricals, scale numericals)
 2. **Reduce dimensionality** with PCA for visualization
-3. Apply **K-Means** across different values of $ k $
+3. Apply **K-Means** across different values of $k$
 4. Use the **Elbow Method** and **Silhouette Score** to select the optimal number of clusters
 5. **Visualize clusters** in 2D and interpret segment differences (e.g., by annual premium, claims, or age)
 
@@ -20,17 +20,17 @@ We follow a standard clustering pipeline:
 
 ## What is K-Means?
 
-K-Means aims to partition data into $ k $ clusters by minimizing within-cluster variance. It assigns each point to the cluster with the nearest centroid and iteratively updates these centroids.
+K-Means aims to partition data into $k$ clusters by minimizing within-cluster variance. It assigns each point to the cluster with the nearest centroid and iteratively updates these centroids.
 
 ### Objective Function
 
-$$
-\text{arg min}_S \sum_{i=1}^k \sum_{x \in S_i} \|x - \mu_i\|^2
-$$
+
+$\text{arg min}_S \sum_{i=1}^k \sum_{x \in S_i} \|x - \mu_i\|^2$
+
 
 Where:
-- $ S_i $: data points in cluster $ i $
-- $ \mu_i $: centroid of cluster $ i $
+- $S_i$: data points in cluster $i$
+- $\mu_i$: centroid of cluster $i$
 
 ---
 
@@ -43,7 +43,7 @@ To visualize clusters in 2D, we apply **Principal Component Analysis (PCA)**. PC
 ## Evaluation Techniques
 
 - **Within-Cluster Sum of Squares (WCSS)**: Measures total intra-cluster variance
-- **Elbow Method**: Plot WCSS vs. $ k $ to identify diminishing returns ("elbow")
+- **Elbow Method**: Plot WCSS vs. $k$ to identify diminishing returns ("elbow")
 - **Silhouette Score**: Evaluates cluster cohesion and separation (closer to 1 = better)
 
 ---
@@ -62,7 +62,7 @@ Once optimal clusters are selected:
 Despite its simplicity and speed, K-Means has several limitations:
 
 - **Assumes spherical clusters**: Performs poorly with elongated or irregular shapes
-- **Needs $ k $ in advance**: Choosing the optimal number of clusters can be non-trivial
+- **Needs $k$ in advance**: Choosing the optimal number of clusters can be non-trivial
 - **Sensitive to initialization**: Poor centroid seeds can lead to suboptimal solutions (mitigated by `k-means++`)
 - **Not robust to outliers**: Single anomalies can heavily shift centroids
 - **Equal importance assumption**: Without proper scaling, features with larger magnitudes dominate the distance metric
