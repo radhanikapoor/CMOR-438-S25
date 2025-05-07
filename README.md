@@ -2,6 +2,8 @@
 
 Creator: Radhani Kapoor
 
+Instructor: Randy R. Davila
+
 ## Overview
 
 <img src="machine_learning.jpeg" alt="Machine Learning Image" width="1500"/>

@@ -1,5 +1,7 @@
 # Unsupervised Learning Module
 
+<img src="unsupervised_learning.png" alt="Unsupervised Learning Image" width="1500"/>
+
 ## What is Unsupervised Learning?
 
 Unsupervised learning is a type of machine learning that works with **unlabeled data**, where the goal is to uncover hidden patterns, groupings, or structures without any predefined outcomes. It is commonly used for clustering, dimensionality reduction, anomaly detection, and exploratory data analysis.
