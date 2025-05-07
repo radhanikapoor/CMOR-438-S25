@@ -14,20 +14,20 @@ Supervised learning tasks are generally divided into:
 
 ## Algorithms Implemented
 
-### 1. Linear Regression
+### 1. Perceptron
+- Type: Binary Classification
+- Description: One of the earliest neural models, it classifies data by learning a linear decision boundary.
+- Dataset Used: `spotify_dataset.csv` and `insurance.csv`
+
+### 2. Linear Regression
 - Type: Regression
 - Description: Fits a straight line to minimize the mean squared error. Used to predict continuous values based on input features.
 - Dataset Used: `insurance.csv`
 
-### 2. Logistic Regression
+### 3. Logistic Regression
 - Type: Classification
 - Description: Predicts binary outcomes using the sigmoid function. Used in scenarios like spam detection or medical diagnoses.
 - Dataset Used: `insurance.csv`
-
-### 3. Perceptron
-- Type: Binary Classification
-- Description: One of the earliest neural models, it classifies data by learning a linear decision boundary.
-- Dataset Used: `spotify_dataset.csv` and `insurance.csv`
 
 ### 4. Neural Networks
 - Type: Classification
@@ -78,7 +78,7 @@ This dataset contains information about individuals’ medical charges billed by
 - `charges`: Total medical charges billed (float) — *target for regression*
 
 
-> **Note**: All datasets are stored in the `Datasets/` folder at the root of the project. When loading data from a notebook, use relative paths like `../Datasets/insurance.csv` depending on your folder structure.
+> **Note**: All datasets are stored in the `Datasets/` folder. When loading data from a notebook, use relative path `../Datasets/insurance.csv` if directly downloaded from repo, but will depend on your folder structure.
 
 
 The `insurance.csv` dataset was used consistently across all algorithms in this project. By applying each model to the same data, the goal was to draw meaningful conclusions about how different machine learning techniques perform under identical conditions. This setup allows for direct comparison of model behavior, strengths, and limitations on a real-world regression task involving both numerical and categorical features.
