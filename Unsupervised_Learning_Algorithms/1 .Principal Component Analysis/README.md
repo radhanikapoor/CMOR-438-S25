@@ -19,15 +19,7 @@ Where:
 
 ## Implementation Overview
 
-We applied PCA using the following steps:
-
-1. **Standardization**: Centered the data to have mean 0 and unit variance.
-2. **Covariance Matrix Computation**: Calculated how features vary with respect to each other.
-3. **Eigen Decomposition**: Computed eigenvectors and eigenvalues of the covariance matrix.
-4. **Component Selection**: Chose top $k$ components based on explained variance.
-5. **Projection**: Transformed the original data into the principal component space.
-
-Alternatively, we used `sklearn.decomposition.PCA` to efficiently compute components and as a comparison
+ we used `sklearn.decomposition.PCA` to efficiently compute components 
 
 ## Explained Variance
 
