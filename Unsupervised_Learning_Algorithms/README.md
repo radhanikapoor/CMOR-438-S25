@@ -16,12 +16,12 @@ Unlike supervised learning, unsupervised models do not predict specific outcomes
 ### 1. K-Means Clustering
 - Type: Clustering
 - Description: Partitions data into k clusters by minimizing intra-cluster variance. Assumes spherical cluster shapes and requires the number of clusters as input.
-- Dataset Used: `Wholesale.csv`
+- Dataset Used: `car_insurance.csv`
 
 ### 2. DBSCAN
 - Type: Clustering
 - Description: Density-Based Spatial Clustering of Applications with Noise. Groups together points that are closely packed and marks points that lie alone in low-density regions as outliers.
-- Dataset Used: `Wholesale.csv`
+- Dataset Used: `car_insurance.csv` and `Wholesale.csv`
 
 ### 3. Principal Component Analysis (PCA)
 - Type: Dimensionality Reduction
@@ -70,7 +70,7 @@ This dataset includes personal and demographic information about car insurance c
 
 ---
 
-> **Note**: All datasets are stored in the `Datasets/` folder at the root of the project. When loading data from a notebook, use relative paths like `../Datasets/car_insurance.csv` depending on your notebook’s location.
+> **Note**: All datasets are stored in the `Datasets/` folder . When loading data from a notebook, use path `../Datasets/car_insurance.csv` if copying repository structure directly, else it will depend on your notebook’s structure.
 
 ---
 
