@@ -1,8 +1,8 @@
 # Random Forests on Insurance Data
 
-This project explores the application of **Random Forest** models for both classification and regression tasks using real-world medical insurance data.
+This explores the application of **Random Forest** models for both classification and regression tasks using real-world medical insurance data.
 
-Although Random Forests were not covered in class, we implement and evaluate them using built-in methods to gain a better understanding of their predictive power.
+Although Random Forests were not covered in class, I implement and evaluate them using built-in methods and my own implelmentation to gain a better understanding of their predictive power.
 
 We focus on:
 - Predicting whether an individual is a **smoker** (classification)
