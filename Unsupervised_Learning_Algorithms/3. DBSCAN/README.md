@@ -31,10 +31,10 @@ Initially, DBSCAN was applied to a preprocessed version of the car insurance dat
 
 DBSCAN may struggle on sparse, high-dimensional, or uniformly distributed data.
 
-### 2. Wine Dataset (PCA-reduced)
+### 2. Wholwsale Dataset
 
 To test DBSCAN in a more favorable setting:
-- The **Wine dataset** was used with PCA applied for dimensionality reduction.
+- The **Wholesale dataset** was used with PCA applied for dimensionality reduction.
 - In this 2D setting, DBSCAN was able to:
   - Form distinct clusters
   - Clearly identify outliers
