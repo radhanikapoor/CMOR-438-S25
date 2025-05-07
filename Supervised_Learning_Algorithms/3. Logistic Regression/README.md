@@ -19,7 +19,7 @@ Where:
 
 ## Implementation Overview
 
-We implemented logistic regression using three approaches:
+We implemented logistic regression using two approaches:
 
 ### 1. Manual Gradient Descent:
 
@@ -43,10 +43,6 @@ To evaluate classification performance, we used:
 - **Confusion Matrix**: Shows the breakdown of true/false positives/negatives
 
 These metrics assess the model’s effectiveness in distinguishing between classes.
-
-## Decision Boundary Visualization
-
-We plotted the decision boundary in 2D feature space to visualize the classifier’s learned separation between classes. This helps assess model behavior and identify potential misclassifications.
 
 ## Coefficient Interpretation
 
