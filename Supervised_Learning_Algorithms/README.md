@@ -59,7 +59,7 @@ Supervised learning tasks are generally divided into:
 | Dataset               | Description                                      | Used For                   |
 |-----------------------|--------------------------------------------------|----------------------------|
 | `insurance.csv`       | U.S. medical insurance data                      | Regression & Classification |
-| `spotify_dataset.csv` | Song-level features (e.g., tempo, energy, etc.)  | Classification tasks        |
+
 
 ### `insurance.csv`
 
@@ -75,22 +75,6 @@ This dataset contains information about individuals’ medical charges billed by
 - `region`: Geographic region of residence in the U.S. (`northeast`, `southeast`, `southwest`, `northwest`)
 - `charges`: Total medical charges billed (float) — *target for regression*
 
----
-
-### `spotify_dataset.csv`
-
-This dataset contains audio features of songs and is useful for classification tasks such as predicting genre or mood.
-
-**Columns:**
-
-- `danceability`: Suitability of a track for dancing (float, 0–1)
-- `energy`: Intensity and activity of the song (float, 0–1)
-- `loudness`: Overall loudness in decibels (float)
-- `tempo`: Estimated beats per minute (float)
-- Additional features like `acousticness`, `instrumentalness`, `liveness`, `valence`: Audio signal properties (float, 0–1)
-- `track_genre`: Genre label for the track — *target for classification*
-
----
 
 > **Note**: All datasets are stored in the `Datasets/` folder at the root of the project. When loading data from a notebook, use relative paths like `../Datasets/insurance.csv` depending on your folder structure.
 
