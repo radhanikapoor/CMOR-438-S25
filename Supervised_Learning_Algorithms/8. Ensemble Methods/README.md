@@ -14,11 +14,11 @@ Both are applied to predict individual medical insurance charges using demograph
 
 Bagging reduces variance by training multiple models on **bootstrapped samples** (random samples with replacement) and averaging their predictions:
 
-$$
-\hat{f}_{\mathrm{bag}}(x) = \frac{1}{M} \sum_{m=1}^{M} h_m(x)
-$$
 
-- Each base model $ h_m $ is typically a decision tree
+$\hat{f}_{\mathrm{bag}}(x) = \frac{1}{M} \sum_{m=1}^{M} h_m(x)$
+
+
+- Each base model $h_m$ is typically a decision tree
 - Averaging reduces overfitting
 
 ### Gradient Boosting
@@ -29,8 +29,8 @@ $$
 F_0(x) = \bar{y}, \quad F_m(x) = F_{m-1}(x) + \nu h_m(x)
 $$
 
-- $ h_m(x) $: tree trained on current residuals
-- $ \nu $: learning rate controls the step size
+- $h_m(x)$: tree trained on current residuals
+- $\nu$: learning rate controls the step size
 - Designed to reduce **bias** and improve accuracy
 
 ---
