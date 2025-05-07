@@ -13,9 +13,9 @@ $$
 $$
 
 Where:
-- $ \mathbf{x} $ is the feature vector
-- $ \mathbf{w} $ is the weight vector
-- $ b $ is the bias (intercept)
+- $\mathbf{x}$ is the feature vector
+- $\mathbf{w}$ is the weight vector
+- $b$ is the bias (intercept)
 
 ---
 
@@ -24,7 +24,7 @@ Where:
 We implemented three approaches to linear regression:
 
 1. **Closed-Form Solution** (Normal Equation):
-   - Solves $ \mathbf{w} = (X^\top X)^{-1} X^\top y $
+   - Solves $\mathbf{w} = (X^\top X)^{-1} X^\top y$
    - Efficient for small datasets with a guaranteed solution
 
 2. **Gradient Descent**:
