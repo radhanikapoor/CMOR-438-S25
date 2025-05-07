@@ -1,5 +1,27 @@
 # Deep Neural Networks on Medical Cost Dataset
 
+## What is a Neural Network
+
+A neural network algorithm is a type of machine learning algorithm inspired by the structure and function of the human brain. It is designed to recognize patterns and relationships in data through interconnected layers of neurons (also called nodes or units).
+
+### Basic Structure of a Neural Network
+Input Layer: Takes in the input features (e.g., age, income, pixels of an image).
+Hidden Layers: One or more layers where the data is transformed using weighted connections and activation functions.
+
+Output Layer: Produces the final prediction (e.g., class label, probability, numeric value).
+
+### How It Works
+Forward Propagation:
+Each neuron computes a weighted sum of its inputs, applies an activation function (like ReLU or sigmoid), and passes it to the next layer.
+This continues until the output layer gives a prediction.
+Loss Function:
+Measures how far the predictions are from the actual values (e.g., mean squared error for regression, cross-entropy for classification).
+Backpropagation:
+The algorithm calculates the gradient of the loss with respect to each weight using the chain rule of calculus.
+It then updates the weights using an optimization method like gradient descent to minimize the loss.
+
+<img src="neural_networks.png" alt="Supervised Learning Image" width="1500"/>
+
 This project implements two deep neural networks from scratch using NumPy to tackle real-world tasks on medical insurance data:
 
 1. **Regression** — Predicting the actual medical charges

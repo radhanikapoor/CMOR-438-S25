@@ -13,6 +13,9 @@ The **Perceptron** models a decision boundary by:
 - Applying a **step function** to classify the input as either 0 or 1
 - Iteratively **updating weights** whenever it makes an incorrect prediction
 
+
+<img src="perceptron.png" alt=" Perceptron Image" width="1500"/>
+
 ### Mathematical Formulation
 
 Given input vector **x**, weight vector **w**, and bias **b**, the perceptron predicts:

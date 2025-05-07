@@ -2,13 +2,13 @@
 
 ## What is Supervised Learning?
 
-<img src="supervised_learning.png" alt="Supervised Learning Image" width="1500"/>
-
 Supervised learning is a type of machine learning where the algorithm is trained on labeled data—that is, input-output pairs where the correct output (label) is known. The goal is to learn a function that maps inputs to outputs, enabling accurate prediction on new, unseen data.
 
 Supervised learning tasks are generally divided into:
 - Regression: Predicting continuous values 
 - Classification: Predicting discrete categories 
+
+<img src="supervised_learning.png" alt="Supervised Learning Image" width="1500"/>
 
 ---
 
