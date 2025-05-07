@@ -10,6 +10,8 @@ KNN is a **non-parametric**, **instance-based** learning method. It makes predic
 
 The KNN algorithm classifies a sample by majority vote among its `k` closest neighbors in the feature space. It requires no explicit training phase — it simply stores the dataset and defers all computation to prediction time.
 
+<img src="knn.png" alt="Knn Image" width="1500"/>
+
 ### Prediction Rule
 
 For a query point \( x \):
