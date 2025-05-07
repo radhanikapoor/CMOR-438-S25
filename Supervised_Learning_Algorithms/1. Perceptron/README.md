@@ -41,9 +41,9 @@ b \leftarrow b + \eta (y - \hat{y})
 $$
 
 Where:
-- \( \eta \) is the **learning rate**
-- \( y \) is the true label
-- \( \hat{y} \) is the predicted label
+- $ \eta $ is the **learning rate**
+- $ y $ is the true label
+- $ \hat{y} $ is the predicted label
 
 ---
 
@@ -55,7 +55,7 @@ Where:
 - Forms the foundation for more advanced models like neural networks
 
 ### Cons:
-- Cannot solve non-linearly separable problems (e.g., XOR)
+- Cannot solve non-linearly separable problems
 - Sensitive to feature scaling and learning rate
 - Convergence is not guaranteed for noisy data
 
