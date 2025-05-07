@@ -43,10 +43,10 @@ Predict whether a person is a smoker (`0` or `1`) based on their attributes.
 - **Accuracy**
 - **Confusion Matrix**:
   $$
-  \begin{bmatrix}
-  \mathrm{TN} & \mathrm{FP} \\
-  \mathrm{FN} & \mathrm{TP}
-  \end{bmatrix}
+  \begin{matrix}
+  \text{TN} & \text{FP} \\
+  \text{FN} & \text{TP}
+  \end{matrix}
   $$
 - **ROC Curve** and **AUC**: Assess model performance across thresholds
 
