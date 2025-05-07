@@ -13,9 +13,9 @@ Z = XW
 $$
 
 Where:
-- \( X \) is the standardized data matrix (samples × features)
-- \( W \) is the matrix of eigenvectors (principal axes)
-- \( Z \) is the projection of the data onto the principal components
+- $X$ is the standardized data matrix (samples × features)
+- $W$ is the matrix of eigenvectors (principal axes)
+- $Z$ is the projection of the data onto the principal components
 
 ## Implementation Overview
 
@@ -24,10 +24,10 @@ We applied PCA using the following steps:
 1. **Standardization**: Centered the data to have mean 0 and unit variance.
 2. **Covariance Matrix Computation**: Calculated how features vary with respect to each other.
 3. **Eigen Decomposition**: Computed eigenvectors and eigenvalues of the covariance matrix.
-4. **Component Selection**: Chose top \( k \) components based on explained variance.
+4. **Component Selection**: Chose top $k$ components based on explained variance.
 5. **Projection**: Transformed the original data into the principal component space.
 
-Alternatively, we used `sklearn.decomposition.PCA` to efficiently compute components.
+Alternatively, we used `sklearn.decomposition.PCA` to efficiently compute components and as a comparison
 
 ## Explained Variance
 
