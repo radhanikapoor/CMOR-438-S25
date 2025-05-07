@@ -1,108 +1,55 @@
-# Unsupervised Learning Module
+# Principal Component Analysis (PCA)
 
-## What is Unsupervised Learning?
+This section demonstrates how to apply **Principal Component Analysis (PCA)** for dimensionality reduction and visualization. PCA is an unsupervised linear transformation technique that projects data into a lower-dimensional space while preserving as much variance as possible.
 
-Unsupervised learning is a type of machine learning that works with **unlabeled data**, where the goal is to uncover hidden patterns, groupings, or structures without any predefined outcomes. It is commonly used for clustering, dimensionality reduction, anomaly detection, and exploratory data analysis.
+## What is PCA?
 
-Unlike supervised learning, unsupervised models do not predict specific outcomes but instead reveal insights about the structure of the data.
+PCA transforms the original features into a new set of orthogonal axes called **principal components**, ordered by the amount of variance they capture from the data. The goal is to reduce dimensionality while retaining the most important information.
 
----
+Mathematically, the transformation is given by:
 
-## Algorithms Implemented
+$$
+Z = XW
+$$
 
-### 1. K-Means Clustering
-- Type: Clustering
-- Description: Partitions data into k clusters by minimizing intra-cluster variance. Assumes spherical cluster shapes and requires the number of clusters as input.
-- Dataset Used: `Wholesale.csv`
+Where:
+- \( X \) is the standardized data matrix (samples × features)
+- \( W \) is the matrix of eigenvectors (principal axes)
+- \( Z \) is the projection of the data onto the principal components
 
-### 2. DBSCAN
-- Type: Clustering
-- Description: Density-Based Spatial Clustering of Applications with Noise. Groups together points that are closely packed and marks points that lie alone in low-density regions as outliers.
-- Dataset Used: `Wholesale.csv`
+## Implementation Overview
 
-### 3. Principal Component Analysis (PCA)
-- Type: Dimensionality Reduction
-- Description: Transforms data into a set of orthogonal components that capture the most variance. Often used as a preprocessing step or for visualization.
-- Dataset Used: `car_insurance.csv`
+We applied PCA using the following steps:
 
-### 4. Singular Value Decomposition (SVD)
-- Type: Dimensionality Reduction
-- Description: Decomposes a matrix into singular vectors and values. Applied here to reduce the dimensionality of image data and reconstruct compressed versions.
-- Dataset Used: Image dataset embedded in the notebook
+1. **Standardization**: Centered the data to have mean 0 and unit variance.
+2. **Covariance Matrix Computation**: Calculated how features vary with respect to each other.
+3. **Eigen Decomposition**: Computed eigenvectors and eigenvalues of the covariance matrix.
+4. **Component Selection**: Chose top \( k \) components based on explained variance.
+5. **Projection**: Transformed the original data into the principal component space.
 
----
+Alternatively, we used `sklearn.decomposition.PCA` to efficiently compute components.
 
-## Datasets
+## Explained Variance
 
-| Dataset             | Description                                         | Used For                   |
-|---------------------|-----------------------------------------------------|----------------------------|
-| `Wholesale.csv`     | Spending patterns of wholesale customers across product categories | DBSCAN |
-| `car_insurance.csv` | Attributes of car insurance customers               |  PCA, K means, DBSCAN |
-| Olivetti Faces Dataset | 400 greyscale facial images (64x64)               | SVD |
+We evaluated how much variance each principal component captures. The first few components often capture most of the variability, justifying dimensionality reduction.
 
-### `Wholesale.csv`
+## 2D Visualization
 
-This dataset contains spending data from customers of a wholesale distributor. It is used to analyze patterns in customer purchase behavior.
+We visualized the data projected onto the top 2 principal components to reveal structure:
 
-**Columns:**
+- Similar groups cluster together.
+- PCA reveals directions of maximum variance.
+- Useful for pattern recognition and preprocessing before clustering or classification.
 
-- `Fresh`: Annual spending on fresh products
-- `Milk`: Annual spending on milk products
-- `Grocery`: Annual spending on grocery products
-- `Frozen`: Annual spending on frozen products
-- `Detergents_Paper`: Annual spending on cleaning products
-- `Delicassen`: Annual spending on delicatessen items
-- (Optional categorical columns: `Channel`, `Region`)
+## Limitations
 
----
+While PCA is a powerful tool, it has several limitations:
 
-### `car_insurance.csv`
+- **Linear**: PCA assumes linear relationships between features.
+- **Interpretability**: Principal components are combinations of original features and may lack intuitive meaning.
+- **Sensitive to scaling**: Features must be standardized for meaningful results.
+- **Ignores label information**: PCA is unsupervised and does not consider class boundaries.
 
-This dataset includes personal and demographic information about car insurance customers. It is used to examine underlying dimensions in the data through PCA.
+## Conclusion
 
-**Columns:**
-
-- Includes a mix of numerical and categorical features such as `Age`, `Income`, `Vehicle_Type`, `Credit_Score`, etc.
-- Typically used to uncover correlations and reduce dimensions for visualization and interpretation
-
----
-
-> **Note**: All datasets are stored in the `Datasets/` folder at the root of the project. When loading data from a notebook, use relative paths like `../Datasets/car_insurance.csv` depending on your notebook’s location.
-
----
-
-## Reproducibility
-
-### Clone the Repository
-
-```bash
-git clone https://github.com/t0dd26/CMOR438-Spring-2025.git
-cd CMOR438-Spring-2025
-```
-
-### Install Required Dependencies
-
-```bash
-pip install numpy pandas matplotlib seaborn scikit-learn
-```
-
-### Launch Jupyter Notebook
-
-```bash
-jupyter lab
-```
-
-Then open any of the following notebooks under `notebooks/` (or your working folder):
-
-- `K_Means_clustering.ipynb`
-- `DBSCAN.ipynb`
-- `Principal_Component_Analysis.ipynb`
-- `SVD.ipynb`
-
----
-
-## Notes
-
-- All code is written in Python 3 using Jupyter Notebooks.
-- Each notebook includes clear visualizations and analysis of patterns in the data.
-- Ensure both `Wholesale.csv` and `car_insurance.csv` are in the `Datasets/` folder, and adjust relative paths accordingly when reading data from notebooks.
+PCA is a valuable technique for data compression and visualization. It helps simplify high-dimensional datasets while retaining essential structure and variance, making it a common first step in many data science workflows.
